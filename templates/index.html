@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+		
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style_index.css') }}">
+    <div class='banner-area'>
+		<header class=index-header>
+			<a href="#" class='logo'>ABC Private Ltd.</a>
+
+			<ul class="menu">
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="{{ url_for('index')}}">Home</a></li>
+			</ul>
+		</header>
+		<div class="banner-text">
+			<h2>HR-bot</h2>
+			<p>Take one step closer to your Dream Job!</p>
+			<a href="#">Read More</a>
+			<a href="{{ url_for('login')}}">Start The Interview</a>
+		</div>
+	</div>
+{% endblock %}

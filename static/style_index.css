@@ -1,0 +1,90 @@
+.banner-area{
+	background-image: url(https://wallpaperplay.com/walls/full/a/e/8/77831.jpg);
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+.index-header{
+	padding: 0px 60px;
+}
+.menu{
+	width: 42%;
+	float: right;
+	list-style: none;
+}
+.menu li{
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	float: right;
+}
+.menu li:hover{
+	background: yellow;
+}
+.menu li:hover a{
+	color: #000;
+}
+.menu li a{
+	text-decoration: none;
+	font-family: baloo, sans-serif;
+	color: #FFFAF0;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 4px #fff;
+}
+.logo{
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	font-family: big john, sans-serif;
+	padding: 20px 0;
+	width: 20%;
+	float: left;
+}
+.banner-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #000;
+	text-align: center;
+}
+.banner-text h2{
+	font-family: baloo, sans-serif;
+	margin-right: 0;
+	font-size: 55px;
+	font-weight: 700;
+    color: #a51414;
+    text-shadow: 2px 2px 4px #000000;
+}
+.banner-text p{
+	font-size: 22px;
+	margin: 0;
+	font-family: poppins, sans-serif;
+	color: #B22222;
+}
+.banner-text a{
+	text-decoration: none;
+	border: 1px solid #fff;
+	padding: 10px 35px;
+	color: #fff;
+	display: inline-block;
+	margin-top: 5%;
+	font-family: poppins, sans-serif;
+	text-transform: uppercase; 
+	text-shadow: 2px 2px 4px #000000;
+}
+.banner-text a:hover{
+	border-color: yellow;
+	background: yellow;
+	transition: .9s;
+	color: #262626; 
+}
+

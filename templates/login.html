@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style_login.css') }}">
+<title>Interview!</title>
+	<form action = "{{ url_for('chatbot')}}" method="post">
+	<div class="login-box">
+		<h1>Sign-up</h1>
+		<div class="textbox">
+			<i class="fa fa-user" aria-hidden="true"></i>
+			<input type="text" placeholder="Enter Your Full Name" name="name">
+		</div>
+		<div class="textbox">
+			<i class="fa fa-envelope" aria-hidden="true"></i>
+			<input type="email" placeholder="Enter Your email-Id" name="email">
+		</div>
+
+		<button type="submit">Sign in</button>
+</div>
+{% endblock %}

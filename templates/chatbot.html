@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+
+{% block body %}   
+    <script src='/static/index.js'></script>  
+    <link rel ="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="/static/style_chatbot.css">        
+
+<div class="container"> 
+    <div class="msg-header">
+            <div class="msg-header-img">
+                <img src="https://images.idgesg.net/images/article/2018/02/artificial_intelligence_ai_virtual_assistant_robot_chatbot_thinkstock_856909876-100749925-large.jpg">
+            </div>
+            <div class="active">
+                <h4>HR-bot</h4>
+                <h6>ABC Private Ltd.</h6>
+            </div>
+    </div>   
+    <div id="chat-area">
+
+    </div>
+    <div>
+    <form id = "message">
+        <input id = "text-field" type="text" autocomplete="off" autofocus placeholder="Write message...">        
+        <button id = "submit" type="submit"><i class="fa fa-paper-plane"></i></button>
+    </form>
+    </div>
+</div>
+{% endblock %}
