@@ -55,7 +55,11 @@ document.addEventListener("DOMContentLoaded", ()=> {
             const data = JSON.parse(request.responseText);
             para.innerHTML = document.querySelector("#text-field").value;
             para2.innerHTML = data.bot;
+            
             document.querySelector(".container > #chat-area").append(para);
+            chatWindow = document.getElementById('chat-area'); 
+            var xH = chatWindow.scrollHeight;
+            chatWindow.scrollTo(0, xH);
             setTimeout(()=> {document.querySelector(".container > #chat-area").append(para2);
             chatWindow = document.getElementById('chat-area'); 
             var xH = chatWindow.scrollHeight; 

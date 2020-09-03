@@ -3,7 +3,7 @@ from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
 #nltk.download('punkt')
 #Libraries needed for Tensorflow Processing
-import tensorflow.compat.v1 as tf
+import tensorflow as tf
 tf.disable_v2_behavior()
 import numpy as np
 import tflearn
@@ -12,8 +12,7 @@ import json
 import pickle
 import warnings
 warnings.filterwarnings("ignore")
-from tensorflow.python.util import deprecation
-deprecation._PRINT_DEPRECATION_WARNINGS = False
+
 
 
 
